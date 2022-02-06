@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/f1683378a7.js" crossorigin="anonymous"></script>
+    <title>Weather forecast</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="mb-3" id="search-form">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="search"
+                  placeholder="Type a city"
+                  autocomplete="off"
+                  autofocus="on"
+                  class="form-control"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-2">
+                <input 
+                  type="image" 
+                  src="src/img/search.png"
+                  class="btn btn-primary"
+                /> 
+              </div>
+              <div class="col-2">
+                <input 
+                  type="image"
+                  src="src/img/location.png"
+                  class="btn btn-location"
+                  id="current-location"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="row">
+          <div class="col-5">
+            <div class="overview">
+              <h1> <span id="city"></span>
+              </h1>
+              <ul>
+                <li><span id="date" class="date"> </span> </li>
+                <li id="description" class="description"></li>
+              </ul>
+              <ul class="details" id="details">
+                <li> <img class="humidity-icon" src="src/img/humidity.png"></img> <span id="humidity" class="humidity"> </span>%   <img class="wind-icon" src="src/img/wind.png"></img>   <span id="wind" class="wind">  </span> km/h </li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-2">
+              <div class="clearfix weather-temperature">
+                <img
+                src="https://openweathermap.org/img/wn/@2x.png"
+                alt="Broken clouds"
+                id="icon"
+                class="float-start" 
+                width="100px" 
+                />
+                </div>
+              </div>
+            <div class="col-4">
+                <div class="temperature">
+                  <strong id="temperature"></strong>
+                  <span class="units">
+                  <a href="#" id="celsius-link" class="active">ºC </a>|
+                  <a href="#" id="fahrenheit-link">ºF</a></span>
+                </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="container">
+              <div class="weather-forecast" id="forecast"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="footer">
+            <a class="github-link" href="https://github.com/irecode/Final-Project-weather" target ="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span class="name">by Irene MR</span>     
+        </div> 
+    <script src="src/index.js"></script>
+  </body>
+</html>
