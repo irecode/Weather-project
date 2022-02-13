@@ -11,12 +11,13 @@ h1 {
   font-weight: 400;
   font-size: 13px;
   width: 230px;
-  position: static;
 }
 .mb-3 {
-  position: static;
-  margin: 0px 4px 0px 245px;
+  padding: 0px 4px 0px 245px;
+  margin: auto;
+  overflow: hidden;
 }
+
 .btn-primary {
   color: #cdd6e0;
   background-color: #5f93d6;
@@ -28,6 +29,7 @@ h1 {
   font-size: 13px;
   width: 40px;
   margin: 0px 4px 0px 20px;
+  overflow: hidden;
 }
 
 .btn-primary:hover {
@@ -46,6 +48,7 @@ h1 {
   font-size: 13px;
   width: 40px;
   margin: 0px 4px 0px 10px;
+  overflow: hidden;
 }
 
 .btn-location:hover {
