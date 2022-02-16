@@ -20,8 +20,8 @@ h1 {
 
 .btn-primary {
   color: #cdd6e0;
-  background-color: #5f93d6;
-  border-color: #5f93d6;
+  background-color: #82afeb;
+  border-color: #82afeb;
   border-radius: 4px;
   transition: all 200ms ease-in-out;
   padding: 9px;
@@ -34,13 +34,13 @@ h1 {
 
 .btn-primary:hover {
   color: #5f93d6;
-  background-color: #94cbff;
-  border: 1px solid #94cbff;
+  background-color: #739bcf;
+  border: 1px solid #739bcf;
 }
 .btn-location {
   color: #cdd6e0;
-  background-color: #5f93d6;
-  border-color: #5f93d6;
+  background-color: #82afeb;
+  border-color: #82afeb;
   border-radius: 4px;
   transition: all 200ms ease-in-out;
   padding: 9px;
@@ -53,8 +53,8 @@ h1 {
 
 .btn-location:hover {
   color: #5f93d6;
-  background-color: #94cbff;
-  border: 1px solid #94cbff;
+  background-color: #739bcf;
+  border: 1px solid #739bcf;
 }
 
 ul {
@@ -139,11 +139,11 @@ li:first-letter {
   margin-right: 0;
 }
 .card {
-  background-color: #5f93d654;
+  background: #a4c4e9;
   padding-bottom: 0px;
   padding-top: 0;
   border-radius: 5px;
-  border-color: #ffffff00;
+  border-color: #accbee;
 }
 .card-body {
   padding-bottom: 20;
@@ -160,10 +160,10 @@ li:first-letter {
   margin: 50px auto;
 }
 .weather-app {
-  border: 1px solid #b3c6db;
+  border: 1px linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   padding: 40px;
   border-radius: 5px;
-  background-color: #b3c6db;
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
 .overview {
   margin-bottom: 30px;
